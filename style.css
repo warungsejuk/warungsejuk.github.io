@@ -6,6 +6,7 @@
   
   body {
     font-family: Arial, sans-serif;
+    background-color: #fff5f575;
     background-image: url('img1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,12 +63,38 @@
     background-color: #fff;
     color: #6b4f4f;
   }
-  
+
+  .menu-toggle{
+    display: none;
+  }
   @media (max-width: 768px) {
     .navbar ul {
-      display: none;
+        display: none;
     }
-  }
+    .navbar .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5em;
+      }
+
+      .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #6b4f4f;
+      }
+    
+      .navbar-menu li {
+        margin: 0.1rem;
+        height: 30px;
+      }
+      
+
+    }
   
   .image-container {
     text-align: center;
@@ -93,4 +120,36 @@
   .footer-text {
     margin-top: 20px;
     font-size: 0.9em;
+  }
+
+  .ingfo{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+  }
+
+  .ingfo h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    -webkit-text-stroke: 2px rgb(0, 0, 0); 
+  }
+
+
+  .pesan-link{
+    background-color: #6b4f4f;
+    border-radius:5px;
+    padding:10px 40px;
+    text-decoration:none;
+    color:rgb(255, 255, 255)
+  }
+  
+  .pesan{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 5px;
+    text-align: center;
   }
